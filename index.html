@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LearnLab | Science & Math</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span>Learn</span>Lab
+        </a>
+
+        <nav>
+            <a href="#home">หน้าหลัก</a>
+            <a href="#science">วิทยาศาสตร์</a>
+            <a href="#math">คณิตศาสตร์</a>
+            <a href="#summary">สรุปบทเรียน</a>
+            <a href="#about">เกี่ยวกับเว็บไซต์</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+
+            <p class="label">
+                HIGH SCHOOL • LEARNING SPACE
+            </p>
+
+            <h1>
+                เรียนให้เข้าใจ
+                <br>
+                <span>จำให้แม่นขึ้น</span>
+            </h1>
+
+            <p class="hero-description">
+
+                เว็บไซต์รวมสรุปบทเรียนวิทยาศาสตร์
+                และคณิตศาสตร์สำหรับนักเรียน
+                ชั้นมัธยมศึกษาตอนปลาย
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#lessons" class="btn primary">
+                    เริ่มเรียนรู้
+                </a>
+
+                <a href="#summary" class="btn secondary">
+                    ดูสรุปด่วน
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+            <div class="circle big"></div>
+
+            <div class="circle small"></div>
+
+            <div class="note note1">
+                Σ
+            </div>
+
+            <div class="note note2">
+                ⚛
+            </div>
+
+            <div class="note note3">
+                π
+            </div>
+
+            <div class="book">
+                📖
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LESSONS ================= -->
+
+    <section id="lessons" class="section">
+
+        <div class="section-title">
+
+            <div>
+
+                <p class="label dark">
+                    LEARNING CATEGORIES
+                </p>
+
+                <h2>
+                    เลือกบทเรียนที่ต้องการ
+                </h2>
+
+            </div>
+
+
+            <div class="search">
+
+                <input
+                    id="search"
+                    type="text"
+                    placeholder="ค้นหาบทเรียน..."
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- FILTER -->
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all">
+
+                ทั้งหมด
+
+            </button>
+
+            <button
+                class="filter"
+                data-filter="science">
+
+                วิทยาศาสตร์
+
+            </button>
+
+            <button
+                class="filter"
+                data-filter="math">
+
+                คณิตศาสตร์
+
+            </button>
+
+            <button
+                class="filter"
+                data-filter="m4">
+
+                ม.4
+
+            </button>
+
+            <button
+                class="filter"
+                data-filter="m5">
+
+                ม.5
+
+            </button>
+
+            <button
+                class="filter"
+                data-filter="m6">
+
+                ม.6
+
+            </button>
+
+        </div>
+
+
+
+        <!-- LESSON CARDS -->
+
+        <div class="cards" id="cards">
+
+
+            <!-- PHYSICS -->
+
+            <article
+                class="card science m4"
+                data-name="ฟิสิกส์ การเคลื่อนที่">
+
+                <div class="card-icon green">
+                    ⚛
+                </div>
+
+                <small>
+                    วิทยาศาสตร์ • ม.4
+                </small>
+
+                <h3>
+                    การเคลื่อนที่
+                </h3>
+
+                <p>
+                    ระยะทาง การกระจัด
+                    อัตราเร็ว ความเร็ว
+                    และความเร่ง
+                </p>
+
+                <a href="#physics">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+
+
+            <!-- CHEMISTRY -->
+
+            <article
+                class="card science m5"
+                data-name="เคมี ปริมาณสารสัมพันธ์">
+
+                <div class="card-icon orange">
+                    🧪
+                </div>
+
+                <small>
+                    วิทยาศาสตร์ • ม.5
+                </small>
+
+                <h3>
+                    ปริมาณสารสัมพันธ์
+                </h3>
+
+                <p>
+                    โมล มวลสาร
+                    จำนวนอนุภาค
+                    และสมการเคมี
+                </p>
+
+                <a href="#chemistry">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+
+
+            <!-- BIOLOGY -->
+
+            <article
+                class="card science m6"
+                data-name="ชีววิทยา ระบบต่อมไร้ท่อ">
+
+                <div class="card-icon green">
+                    🧬
+                </div>
+
+                <small>
+                    วิทยาศาสตร์ • ม.6
+                </small>
+
+                <h3>
+                    ระบบต่อมไร้ท่อ
+                </h3>
+
+                <p>
+                    ฮอร์โมน ต่อมไร้ท่อ
+                    และการควบคุมสมดุล
+                </p>
+
+                <a href="#biology">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+
+
+            <!-- SET -->
+
+            <article
+                class="card math m4"
+                data-name="คณิตศาสตร์ เซต">
+
+                <div class="card-icon orange">
+                    ∪
+                </div>
+
+                <small>
+                    คณิตศาสตร์ • ม.4
+                </small>
+
+                <h3>
+                    เซต
+                </h3>
+
+                <p>
+                    สมาชิก ยูเนียน
+                    อินเตอร์เซกชัน
+                    และส่วนเติมเต็ม
+                </p>
+
+                <a href="#sets">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+
+
+            <!-- SEQUENCE -->
+
+            <article
+                class="card math m5"
+                data-name="คณิตศาสตร์ ลำดับและอนุกรม">
+
+                <div class="card-icon green">
+                    Σ
+                </div>
+
+                <small>
+                    คณิตศาสตร์ • ม.5
+                </small>
+
+                <h3>
+                    ลำดับและอนุกรม
+                </h3>
+
+                <p>
+                    ลำดับเลขคณิต
+                    ลำดับเรขาคณิต
+                    และผลบวก
+                </p>
+
+                <a href="#sequence">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+
+
+            <!-- PROBABILITY -->
+
+            <article
+                class="card math m6"
+                data-name="คณิตศาสตร์ ความน่าจะเป็น">
+
+                <div class="card-icon orange">
+                    π
+                </div>
+
+                <small>
+                    คณิตศาสตร์ • ม.6
+                </small>
+
+                <h3>
+                    ความน่าจะเป็น
+                </h3>
+
+                <p>
+                    การทดลองสุ่ม
+                    เหตุการณ์
+                    และกฎความน่าจะเป็น
+                </p>
+
+                <a href="#probability">
+                    อ่านบทเรียน →
+                </a>
+
+            </article>
+
+        </div>
+
+
+        <p id="empty" class="empty">
+            ไม่พบบทเรียนที่ค้นหา
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= SUMMARY ================= -->
+
+    <section id="summary" class="section quick">
+
+        <p class="label dark">
+            QUICK REVIEW
+        </p>
+
+        <h2>
+            สูตรสำคัญที่ควรจำ
+        </h2>
+
+
+        <div class="formula-grid">
+
+
+            <div class="formula-card">
+
+                <b>
+                    v = Δs / Δt
+                </b>
+
+                <span>
+                    ความเร็วเฉลี่ย
+                </span>
+
+            </div>
+
+
+            <div class="formula-card">
+
+                <b>
+                    a = Δv / Δt
+                </b>
+
+                <span>
+                    ความเร่ง
+                </span>
+
+            </div>
+
+
+            <div class="formula-card">
+
+                <b>
+                    aₙ = a₁ + (n−1)d
+                </b>
+
+                <span>
+                    ลำดับเลขคณิต
+                </span>
+
+            </div>
+
+
+            <div class="formula-card">
+
+                <b>
+                    P(A) = n(A) / n(S)
+                </b>
+
+                <span>
+                    ความน่าจะเป็น
+                </span>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= LESSON DETAILS ================= -->
+
+    <section class="details">
+
+
+        <article id="physics">
+
+            <div class="detail-icon green">
+                ⚛
+            </div>
+
+            <div>
+
+                <small>
+                    ฟิสิกส์
+                </small>
+
+                <h2>
+                    การเคลื่อนที่
+                </h2>
+
+                <p>
+
+                    การกระจัดคือการเปลี่ยนตำแหน่ง
+                    จากจุดเริ่มต้นถึงจุดสุดท้าย
+                    ส่วนความเร็วเป็นปริมาณที่มี
+                    ทั้งขนาดและทิศทาง
+
+                </p>
+
+                <div class="formula">
+                    v = Δx / Δt
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="chemistry">
+
+            <div class="detail-icon orange">
+                🧪
+            </div>
+
+            <div>
+
+                <small>
+                    เคมี
+                </small>
+
+                <h2>
+                    ปริมาณสารสัมพันธ์
+                </h2>
+
+                <p>
+
+                    โมลใช้บอกปริมาณของสาร
+                    โดย 1 mol มีอนุภาคประมาณ
+                    6.02 × 10²³ อนุภาค
+
+                </p>
+
+                <div class="formula">
+                    n = m / M
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="biology">
+
+            <div class="detail-icon green">
+                🧬
+            </div>
+
+            <div>
+
+                <small>
+                    ชีววิทยา
+                </small>
+
+                <h2>
+                    ระบบต่อมไร้ท่อ
+                </h2>
+
+                <p>
+
+                    ต่อมไร้ท่อสร้างฮอร์โมน
+                    และหลั่งเข้าสู่กระแสเลือด
+                    เพื่อควบคุมการทำงานของร่างกาย
+
+                </p>
+
+                <div class="formula">
+                    ฮอร์โมน → เลือด → อวัยวะเป้าหมาย
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="sets">
+
+            <div class="detail-icon orange">
+                ∪
+            </div>
+
+            <div>
+
+                <small>
+                    คณิตศาสตร์
+                </small>
+
+                <h2>
+                    เซต
+                </h2>
+
+                <p>
+
+                    A ∪ B คือสมาชิกที่อยู่ใน A หรือ B
+                    และ A ∩ B คือสมาชิกที่อยู่ทั้งใน A และ B
+
+                </p>
+
+                <div class="formula">
+                    A ∪ B | A ∩ B
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="sequence">
+
+            <div class="detail-icon green">
+                Σ
+            </div>
+
+            <div>
+
+                <small>
+                    คณิตศาสตร์
+                </small>
+
+                <h2>
+                    ลำดับและอนุกรม
+                </h2>
+
+                <p>
+
+                    ลำดับเลขคณิตมีผลต่างร่วมคงที่
+                    และลำดับเรขาคณิตมีอัตราส่วนร่วมคงที่
+
+                </p>
+
+                <div class="formula">
+                    aₙ = a₁ + (n−1)d
+                </div>
+
+            </div>
+
+        </article>
+
+
+
+        <article id="probability">
+
+            <div class="detail-icon orange">
+                π
+            </div>
+
+            <div>
+
+                <small>
+                    คณิตศาสตร์
+                </small>
+
+                <h2>
+                    ความน่าจะเป็น
+                </h2>
+
+                <p>
+
+                    ค่าความน่าจะเป็นอยู่ระหว่าง
+                    0 ถึง 1 โดย 0 คือเป็นไปไม่ได้
+                    และ 1 คือเกิดขึ้นแน่นอน
+
+                </p>
+
+                <div class="formula">
+                    0 ≤ P(A) ≤ 1
+                </div>
+
+            </div>
+
+        </article>
+
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div>
+
+            <p class="label">
+                ABOUT
+            </p>
+
+            <h2>
+                พื้นที่สำหรับการทบทวนบทเรียน
+            </h2>
+
+            <p>
+
+                เว็บไซต์นี้ออกแบบเพื่อช่วยให้นักเรียน
+                มัธยมศึกษาตอนปลายเข้าถึงเนื้อหาสำคัญ
+                ได้ง่าย โดยแบ่งหมวดหมู่ชัดเจน
+                และเน้นข้อความที่กระชับ
+
+            </p>
+
+        </div>
+
+
+        <div class="about-box">
+
+            <div>
+                <strong>01</strong>
+                <b>อ่านง่าย</b>
+                <span>แบ่งเนื้อหาเป็นหัวข้อย่อย</span>
+            </div>
+
+            <div>
+                <strong>02</strong>
+                <b>ค้นหาเร็ว</b>
+                <span>ค้นหาบทเรียนจากชื่อเรื่อง</span>
+            </div>
+
+            <div>
+                <strong>03</strong>
+                <b>ทบทวนได้</b>
+                <span>รวมสูตรสำคัญไว้ในที่เดียว</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        LearnLab • Science & Math Learning Space • 2026
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
